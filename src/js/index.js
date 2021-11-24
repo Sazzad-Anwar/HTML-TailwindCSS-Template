@@ -24,10 +24,25 @@ $(document).ready(() => {
     });
 
     if (window.innerWidth < 992) {
-        $('.bi-chevron-right').removeClass('bi-chevron-right').addClass('bi-plus-lg');
+        console.log($('.bi-chevron-right'));
+        $('.bi-chevron-right').addClass('bi-plus-lg');
+        $('.bi-chevron-right').removeClass('bi-chevron-right')
     } else {
-        ('.bi-plus-lg').removeClass('bi-plus-lg').addClass('bi-chevron-right');
+        $('.bi-chevron-right').removeClass('bi-plus-lg');
+        $('.bi-chevron-right').addClass('bi-chevron-right')
     }
+
+    window.addEventListener('resize', () => {
+
+        if (window.innerWidth < 992) {
+            console.log($('.bi-chevron-right'));
+            $('.bi-chevron-right').addClass('bi-plus-lg');
+            $('.bi-chevron-right').removeClass('bi-chevron-right')
+        } else {
+            $('.bi-plus-lg').addClass('bi-chevron-right')
+            $('.bi-plus-lg').removeClass('bi-plus-lg');
+        }
+    })
 
 });
 

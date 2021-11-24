@@ -94,7 +94,7 @@
     width: 100%;
 }
 .dropdown:hover .dropdown-menu {
-    top: 61px;
+    top: 56px;
     opacity: 1;
     visibility: visible;
 }
@@ -177,7 +177,7 @@
     padding: 0 1rem;
 }
 .menu-items li:hover .mega-menu {
-    top: 81px;
+    top: 73px;
     opacity: 1;
     visibility: visible;
 }
